@@ -40,7 +40,7 @@ class Todo extends React.Component {
 
   onDeleteHandler(index) {
     index.preventDefault();
-
+    //find target ID and then locate the index of that ID
     let findIndex = this.state.data
       .map((elem) => {
         return elem.id;
@@ -67,15 +67,16 @@ class Todo extends React.Component {
     ));
 
     return (
-      <div>
+      <div id="todoID">
+        <h1>To Do List</h1>
         <form>
           <input
             type="text"
-            placeholder="add something here"
+            placeholder="What needs to be done"
             value={this.state.inputValue}
             onChange={this.handleChange}
           ></input>
-          <button onClick={this.updateList}>submit here</button>
+          <button onClick={this.updateList}>Add</button>
         </form>
         {formattedData}
       </div>

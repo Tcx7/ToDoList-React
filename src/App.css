@@ -1,0 +1,21 @@
+#root {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  /* background-color: beige; */
+  background-image: url(../public/img/Background.webp);
+}
+
+ul {
+  align-items: center;
+}
+
+#todoID {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

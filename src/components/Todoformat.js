@@ -5,7 +5,7 @@ function TodoFormat(props) {
   return (
     <div>
       <ul>
-        <li>ID: {props.propID}</li>
+        {/* <li>ID: {props.propID}</li> */}
         <li>Task To Complete: {props.propTask}</li>
         <li>
           Start Date:
